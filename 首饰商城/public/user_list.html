@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>用户列表</h2>
+    <form action="/user/list" method="get">
+        页码<input type="text" name = "pno"><br>
+        大小<input type="text" name = "pageSize"><br>        
+        <input type="submit">
+    </form>    
+</body>
+</html>
+<!-- 
+    1获取数据
+    2如果页码为空 默认为1 如果大小为空默认是2
+    3大小转整型
+    4计算开始查询的值start
+    5执行SQL
+ -->
